@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+:root {
+    --bg: #211633;
+    --width: 1024px;
+    --duration: 0.5s;
+    --transition-style: ease-in-out;
+}
+
+.main {
+    position: relative;
+    background: #151320;
+    font-family: Montserrat, sans-serif;
+    color: white
+}
+
+.welcome {
+    margin: auto;
+    width: var(--width);
+}
+
+.name {
+    margin: 1rem 0rem 1rem 2rem;
+    font-weight: bold;
+    text-align: left;
+    width: var(--width);
+}
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin: auto;
+    width: var(--width);
+    /* background-color: yellowgreen; */
+    border-radius: 1%;
+}
+
+.introduction-pic-container {
+    background-color: var(--bg);
+    width: 33%;
+    margin: 0rem 2rem 0rem 2rem;
+    border-radius: 5%;
+    transition: background-color var(--duration) var(--transition-style);
+}
+
+.introduction-pic-container:hover {
+    background-color: rgba(255, 0, 0, 0.404);
+}
+
+.pic-me {
+    border-radius: 50%;
+    height: 85%;
+    width: 85%;
+    margin-top: 7.5%;
+    margin-left: 7.5%;
+}
+
+.introduction-about {
+    background-color: var(--bg);
+    height: 300px;
+    width: 57%;
+    border-radius: 10px;
+    margin: 0rem 2rem 0rem 0rem;
+    transition: background-color var(--duration) var(--transition-style);
+}
+
+.introduction-about:hover {
+    background-color: rgba(255, 166, 0, 0.493);
+}
+
+.introduction-socials {
+    width: 10%;
+    background-color: var(--bg);
+    border-radius: 10px;
+    margin: 0rem 2rem 0rem 0rem ;
+    transition: background-color var(--duration) var(--transition-style);
+}
+
+.introduction-socials:hover {
+    background-color: rgba(255, 255, 0, 0.521);
+}
+
+.socials {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials button{
+    width: 46px;
+    height: 42px;
+    font-size: 32px;
+    background-color: rgba(179, 127, 127, 0.637);
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 1rem;
+    margin-left: 1.5rem
+}
+
+.socials button:hover {
+    background-color: rgb(235, 168, 168);
+}
+
+/* Skills Section */
+
+.skills {
+    margin: auto;
+    width: var(--width);
+}

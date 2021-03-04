@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/portfolio.css">
+    <link rel="stylesheet" href="./styles/barchart.css"/>
+    <link rel="stylesheet" href="./styles/projects.css"/>
+</head>
+<body class="main">
+    <div class="welcome">
+        <h1 style="font-size:32px; margin-bottom: 1rem; margin-top:2rem; text-align:center">Hello, I'm Brian!</h1>
+        <div class="introduction">
+            <div class="introduction-pic-container"><img src="./pics/me.png" class="pic-me"></div>
+            <div class="introduction-about">
+                <p style="margin: 2rem 2rem 0rem 2rem;" id="intro">Hello! My name is Brian Ventura. I am a third year computer science major
+                    at UCI looking for a software engineering internship. Eventually I want to find what interests me in the 
+                    broad realm of computer science, but for now, I'm more focused on getting my foot through the door. Follow 
+                    along and watch my personal website grow as I continue to develop new skills!</p>
+            </div>
+            <div class="introduction-socials">
+                <div class="socials">
+                    <button class="fab fa-github-square" onclick="location.href='https://www.github.com/brianv212'" id="icon"></button>
+                    <button class="fab fa-facebook-square" onclick="location.href='https://www.facebook.com/BrianVenturaa'" id="icon"></button>
+                    <button class="fab fa-linkedin" onclick="location.href='https://www.linkedin.com/in/brian-ventura-34a975197/'" id="icon"></button>
+                    <button class="fab fa-instagram-square" onclick="location.href='https://www.instagram.com/briancv_'" id="icon"></button>
+                </div>      
+            </div>        
+        </div>
+    </div>
+
+    <div class="past-projects">
+        <h1 style="font-size:32px; margin-bottom: 1rem; margin-top:2rem; text-align:center">View My Past Works!</h1>
+        <div class="past-projects-inner">
+            <div class="pp-topbar">
+                <button class="pp-pprojects" id="1">Past Projects</button>
+                <button class="pp-pcourses" id="2">Past Courses</button>
+            </div>
+            <div class="pp-content">
+                <div class="pp-directory">
+                    <div class="pp-item" id="0">Algorithm Racing!</div><hr id="bar">
+                    <div class="pp-item" id="1">eSports Tracker</div><hr id="bar">
+                    <div class="pp-item" id="2">Questions From a Stranger</div><hr id="bar">
+                </div>
+                <div class="pp-display">
+                    <h1 class="pp-display-title">&uarr; Select a Category</h1>
+                    <div class="pp-display-description"></div><button id="read_more_button" class="button_empty">Read More!</button>
+                    <div class="pp-display-picture"><img src="" id="image" class="image_empty"/></div>
+                </div>                
+            </div>
+        </div>
+        <!-- <div class="read-more">
+            <div class="read-more-heading">
+                <div class="read-more-title"></div>
+                <button class="read-more-exit">&times;</button>
+            </div>
+
+            <div class="read-more-description"></div>
+        </div> -->
+    </div>
+
+    <div class="skills">
+        <h1 style="font-size:32px; margin-bottom: 1rem; margin-top:2rem; text-align:center">Current Skills</h1>
+        <div class="placement">
+            <div class="chart">
+                <ul class="numbers">
+                    <li><span>Expert</span></li>
+                    <li><span>Proficient</span></li>
+                    <li><span>Familiar</span></li>
+                </ul>
+                <ul class="bars">
+                    <li><div class="bar" data-percentage="Proficient" style="height: 175px"></div><span>Python</span></li>
+                    <li><div class="bar" data-percentage="Proficient" style="height: 150px"></div><span>C++</span></li>
+                    <li><div class="bar" data-percentage="Familiar" style="height: 60px"></div><span>Javascript</span></li>
+                    <li><div class="bar" data-percentage="Familiar" style="height: 75px"></div><span>(React) Javascript</span></li>
+                    <li><div class="bar" data-percentage="Basic" style="height: 20px"></div><span>Java</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="./projects.js"></script>
+</body>
+</html>

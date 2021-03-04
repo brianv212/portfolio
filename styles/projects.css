@@ -1,0 +1,139 @@
+.past-projects {
+    height: 600px;
+    width: var(--width);
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.past-projects-inner {
+    margin: 0rem 2rem 2rem 2rem;
+    background-color: var(--bg);
+    height: 90%;
+    border-radius: 10px;
+}
+
+.pp-topbar {
+    height: 10%;
+    background-color: #001350;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: background-color 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+}
+
+.pp-pprojects {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px 0px 0px 0px;
+    border: none;
+    background-color: transparent;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+}
+
+.pp-pprojects:hover {
+    background-color: #F44336;
+}
+
+.pp-pcourses {
+    width: 50%;
+    height: 100%;
+    border-radius: 0px 10px 0px 0px;
+    border: none;
+    background-color: transparent;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    /* Are these necessary? */
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+}
+
+.pp-pcourses:hover {
+    background-color: #F44336;
+}
+
+.pp-content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.pp-directory {
+    width: 30%;
+    height: 0%;
+    overflow-x: scroll;
+    background-color: #15b0d6;
+    border-radius: 0px 0px 0px 10px;
+    -webkit-transition: 1s;
+}
+
+.pp-directory.show {
+    height: 90%;
+    -webkit-transition: height 1s;
+}
+
+.pp-item {
+    height: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    margin: auto;
+}
+
+.pp-item:hover {
+    background-color: #F44336;
+}
+
+.pp-display {
+    width: 70%;
+    height: 90%;
+    background-color: var(--bg);
+}
+
+.pp-display-title {
+    text-align: center;
+    margin: 1rem 2rem 1rem 2rem
+}
+
+.pp-display-description {
+    margin: 1rem 2rem 1rem 2rem
+}
+
+.pp-display-pictures {
+    background: none;
+    margin: 1rem 2rem 1rem 2rem;
+    width: 70%;
+    height: 50%
+}
+
+.button_empty {
+    display: none;
+}
+
+.button_display {
+    margin: 0rem 0rem 0rem 45%;
+}
+
+.image_empty {
+    display: none;
+}
+
+.image {
+    width: 400px;
+    height: 200px;
+    margin: 2rem 0rem 0rem 20%;
+    border: 2px solid rgba(73, 28, 196, 0.473)
+}
