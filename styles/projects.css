@@ -1,3 +1,14 @@
+a {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a:hover {
+    color:rgba(0, 240, 60, 0.76);
+    font-weight: bold;
+}
+
 .past-projects {
     height: 600px;
     width: var(--width);

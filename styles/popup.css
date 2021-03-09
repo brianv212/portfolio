@@ -1,0 +1,82 @@
+.read-more {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px white;
+    border-radius: 10px;
+    z-index: 5;
+    background-color: rgb(128, 37, 37);
+    width: 800px;
+    height: 500px;
+    overflow-x: scroll;
+    max-width: 80%;
+}
+
+.read-more-active {
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+.read-more-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.read-more-title {
+    margin: 0.5rem 0rem 0.5rem 2rem
+}
+
+.read-more-exit {
+    margin: 0.25rem 2rem 0.5rem 0rem;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white
+}
+
+.read-more-description {
+    margin: 0.5rem 2rem 0.5rem 2rem;
+    height: 200px;
+    overflow-x: scroll;
+    border: 1px solid black;
+}
+
+.read-more-visuals {
+    width: 375px;
+    height: 175px;
+    margin: auto;
+    margin-top: 1.5rem;
+    border: 2px solid rgb(0, 0, 0)
+}
+
+.rmimage {
+    width: 375px;
+    height: 175px;
+    filter: brightness(90%);
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.rmimage:hover {
+    filter: brightness(110%);
+}
+
+.overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+.overlay-active {
+    pointer-events: all;
+    opacity: 1;
+}
