@@ -1,7 +1,8 @@
 var titles = [[
     "Algorithm Racing!",
     "eSports Tracker",
-    "Questions From a Stranger"
+    "Questions From a Stranger",
+    "Covid-19 Simulator"
 ],[
     "CS 178: Machine Learning and Data Mining",
     "CS 171: Intro to Artificial Intelligence",
@@ -27,7 +28,13 @@ var text = [[
     get some decent answers? I decided to create this website simply because I wanted\
     to test the idea of receiving advice as well as asking questions anonymously.\
     No one really knows who you are, and there are definitely no ID's to see who's\
-    asking what or saying what."
+    asking what or saying what.",
+
+    "My friend came up to me and asked if I could teach him the basics of ReactJS, and having\
+    been using the language for some time now, I thought it'd be an even better idea to just create\
+    something together. Right after my finals this Winter quarter, we saw and signed up for Hack PSU\
+    Spring 2021, with the only goal of having a good time, creating something that could be an introduction\
+    for my friend."
 ],[
     "Probably one of the harder courses I've taken. Considering I've never never\
     really dealt with Machine Learning, there was definitely a lot to take in over the\
@@ -95,14 +102,27 @@ var text_full = [[
     of Firebase, but with some determination it came by easily.\
     It's definitely not a perfect application, but given more time I would like to\
     add more features to it and make it a cleaner-looking application!\
-    </br></br><a onclick=\"redirect('https://github.com/brianv212/questions_from_a_stranger')\" class='link'>Github Repository</a>"],
+    </br></br><a onclick=\"redirect('https://github.com/brianv212/questions_from_a_stranger')\" class='link'>Github Repository</a>",
+    "</br></br>We weren't going for any of the prizes. We simply wanted to teach a good friend how to use the language.\
+    It was also a plus being able to refine the skills I already have with this project. When thinking about ideas, we noticed\
+    a particular category about spreading awareness about Covid-19 using any technology. We went with this idea because it was\
+    simple, and broad enough of a category that we could get a little creative with.\
+    </br></br>What ended up happening was implementing an idea where we simulate the spread of covid (or any disease for that matter),\
+    using very simple methods. The idea was having infected and noninfected characters in a confined area, and showing how quickly\
+    a disease could spread with a lack of a mask.\
+    </br></br>It was a very fun process and we all definitely enjoyed working on it. Check it out!\
+    </br></br><a onclick=\"redirect('https://kodykhuu.github.io/covid-sim')\" class='link'>Website</a>\
+    </br><a onclick=\"redirect('https://github.com/brianv212/covid-sim-1')\" class='link'>Github Repository</a>\
+    </br><a onclick=\"redirect('https://devpost.com/software/sus-simulator')\" class='link'>Dev Post</a>"],
+    []
 ]
-
+// https://kodykhuu.github.io/covid-sim/
 // "<a href='"+item.title+"'>Google</a>"
 
 var pictures = [["./pics/algracing1.png","./pics/algracing2.png","./pics/algracing3.png"],
                 ["./pics/esports1.png","./pics/esports2.png"],
-                ["./pics/qfas_1.png", "./pics/qfas_2.png", "./pics/qfas_3.png"]]
+                ["./pics/qfas_1.png", "./pics/qfas_2.png", "./pics/qfas_3.png"],
+                ["./pics/covidsim1.png","./pics/covidsim2.png","./pics/covidsim3.png"]]
 
 var picture_index = 0;
 var picture_cycle = 0;
