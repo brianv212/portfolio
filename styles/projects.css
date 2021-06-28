@@ -13,7 +13,7 @@ a:hover {
     height: 600px;
     width: var(--width);
     margin: auto;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .past-projects-inner {
@@ -36,9 +36,9 @@ a:hover {
 }
 
 .pp-pprojects {
-    width: 50%;
+    width: 100%;
     height: 100%;
-    border-radius: 10px 0px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     border: none;
     background-color: transparent;
     font-family: Montserrat;
@@ -81,18 +81,20 @@ a:hover {
     height: 100%;
 }
 
+
+
+/* Contents */
 .pp-directory {
     width: 30%;
     height: 0%;
-    overflow-x: scroll;
-    background-color: #15b0d6;
+    overflow-y: scroll;
+    background-color: var(--bg);
     border-radius: 0px 0px 0px 10px;
-    -webkit-transition: 1s;
+    -webkit-transition: 0.75s;
 }
 
 .pp-directory.show {
     height: 90%;
-    -webkit-transition: height 1s;
 }
 
 .pp-item {
@@ -108,10 +110,22 @@ a:hover {
     background-color: #F44336;
 }
 
+.pp-display-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
 .pp-display {
     width: 70%;
-    height: 90%;
+    height: 0%;
     background-color: var(--bg);
+    overflow-y: scroll;
+    -webkit-transition: 1s;
+}
+
+.pp-display.show {
+    height: 90%;
 }
 
 .pp-display-title {
@@ -123,28 +137,34 @@ a:hover {
     margin: 1rem 2rem 1rem 2rem
 }
 
-.pp-display-pictures {
+.pp-display-picture {
+    margin: 0rem 0rem 0.5rem 0rem;
     background: none;
-    margin: 1rem 2rem 1rem 2rem;
-    width: 70%;
-    height: 50%
+    height: 200px
 }
 
-.button_empty {
+/* Popup CSS */
+/* .button_empty {
     display: none;
 }
 
 .button_display {
     margin: 0rem 0rem 0rem 45%;
-}
+} */
 
-.image_empty {
+/* .image_empty {
     display: none;
-}
+} */
 
 .image {
-    width: 400px;
-    height: 200px;
-    margin: 2rem 0rem 0rem 20%;
-    border: 2px solid rgba(73, 28, 196, 0.473)
+    width:100%;
+    height:100%;
+    border: 1px solid rgba(217, 215, 224, 0.473);
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image:hover {
+    opacity: 0.6;
 }

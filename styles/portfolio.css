@@ -13,6 +13,7 @@
     --width: 1024px;
     --duration: 0.5s;
     --transition-style: ease-in-out;
+    --transition-color: rgba(255, 0, 0, 0.404);
 }
 
 .main {
@@ -24,6 +25,7 @@
 
 .welcome {
     margin: auto;
+    margin-bottom: 2rem;
     width: var(--width);
 }
 
@@ -40,8 +42,6 @@
     height: 300px;
     margin: auto;
     width: var(--width);
-    /* background-color: yellowgreen; */
-    border-radius: 1%;
 }
 
 .introduction-pic-container {
@@ -49,11 +49,12 @@
     width: 33%;
     margin: 0rem 2rem 0rem 2rem;
     border-radius: 5%;
-    transition: background-color var(--duration) var(--transition-style);
+    transition: box-shadow var(--duration) var(--transition-style);
 }
 
 .introduction-pic-container:hover {
-    background-color: rgba(255, 0, 0, 0.404);
+    /* background-color: rgba(255, 0, 0, 0.404); */
+    box-shadow: -10px -5px 5px var(--transition-color);
 }
 
 .pic-me {
@@ -66,15 +67,14 @@
 
 .introduction-about {
     background-color: var(--bg);
-    height: 300px;
     width: 57%;
     border-radius: 10px;
     margin: 0rem 2rem 0rem 0rem;
-    transition: background-color var(--duration) var(--transition-style);
+    transition: box-shadow var(--duration) var(--transition-style);;
 }
 
 .introduction-about:hover {
-    background-color: rgba(255, 166, 0, 0.493);
+    box-shadow: -10px -5px 5px var(--transition-color);
 }
 
 .introduction-socials {
@@ -82,27 +82,51 @@
     background-color: var(--bg);
     border-radius: 10px;
     margin: 0rem 2rem 0rem 0rem ;
-    transition: background-color var(--duration) var(--transition-style);
+    transition: box-shadow var(--duration) var(--transition-style);
 }
 
 .introduction-socials:hover {
-    background-color: rgba(255, 255, 0, 0.521);
+    box-shadow: -10px -5px 5px var(--transition-color);
 }
 
+
+/* Skills Section */
+.skills {
+    margin: auto;
+    width: var(--width);
+}
+
+/* Bottom Bar */
+.bottom-bar {
+    margin: auto;
+    height: 75px;
+    width: var(--width);
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 .socials {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    margin: 0rem 2rem 0rem 2rem;
+    width: 70%;
+    height: 100%;
+
+    background-color: var(--bg);
+    border-radius: 10px 10px 0px 0px;
 }
 
 .socials button{
     width: 46px;
     height: 42px;
     font-size: 32px;
+
     background-color: rgba(179, 127, 127, 0.637);
     transition: background-color 0.3s ease-in-out;
+
     border: none;
     border-radius: 10px;
+
     cursor: pointer;
     margin: 1rem;
     margin-left: 1.5rem
@@ -112,9 +136,14 @@
     background-color: rgb(235, 168, 168);
 }
 
-/* Skills Section */
+.website {
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--bg);
+    width: 30%;
+    margin: 0rem 2rem 0rem 2rem;
 
-.skills {
-    margin: auto;
-    width: var(--width);
+    /* Center the text */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 75px; /* <-- Keep the same as .bottom-bar height */
 }

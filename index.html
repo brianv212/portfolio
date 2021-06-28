@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, I'm Brian!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/portfolio.css">
+    <link rel="stylesheet" href="./styles/barchart.css"/>
+    <link rel="stylesheet" href="./styles/projects.css"/>
+    <link rel="stylesheet" href="./styles/popup.css"/>
+</head>
+<body class="main">
+    <div class="welcome">
+        <h1 style="font-size:32px; margin-bottom: 1rem; margin-top:2rem; text-align:center">Hello, I'm Brian!</h1>
+        <div class="introduction">
+            <div class="introduction-pic-container"><img src="./pics/me.png" class="pic-me"></div>
+            <div class="introduction-about">
+                <p style="margin: 2rem 2rem 0rem 2rem;" id="intro">Hello! My name is Brian Ventura. I am a third year computer science major
+                    at UCI looking for a software engineering internship. Eventually I want to find what interests me in the 
+                    broad realm of computer science, but for now, I'm more focused on getting my foot through the door. Thanks for
+                    stopping by!
+                </p>
+            </div>
+            <div class="introduction-socials">      
+            </div>        
+        </div>
+    </div>
+
+    <div class="past-projects">
+        <!-- <h1 style="font-size:32px; margin-bottom: 1rem; margin-top:2rem; text-align:center">View My Past Works!</h1> -->
+        <div class="past-projects-inner">
+            <div class="pp-topbar">
+                <button class="pp-pprojects" id="1">View my part works!</button>
+                
+            </div>
+            <div class="pp-content">
+                <div class="pp-directory">
+                    <!-- Show when clicked - example -->
+                    <!-- <div class="pp-display-picture"><img class="image" id="0" src="./pics/algracing1.png"></div>
+                    <div class="pp-display-picture"><img class="image" id="1" src="./pics/esports1.png"></div>
+                    <div class="pp-display-picture"><img class="image" id="2" src="./pics/qfas_1.png"></div>
+                    <div class="pp-display-picture"><img class="image" id="3" src="./pics/covidsim1.png"></div> -->
+                </div>
+                <div class="pp-display">
+                    <h1 class="pp-display-title"></h1>
+                    <div class="pp-display-description"></div>
+                    <div class="pp-display-pictures"><img src="" id="image" class="image_empty"/></div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    
+    <div class="skills">
+        <h1 style="font-size:32px; margin-bottom: 1rem; margin-top:2rem; text-align:center">Current Skills</h1>
+        <div class="placement">
+            <div class="chart">
+                <ul class="numbers">
+                    <li><span>Expert</span></li>
+                    <li><span>Proficient</span></li>
+                    <li><span>Familiar</span></li>
+                </ul>
+                <ul class="bars">
+                    <li><div class="bar" data-percentage="Proficient" style="height: 175px"></div><span>Python</span></li>
+                    <li><div class="bar" data-percentage="Familiar" style="height: 100px"></div><span>C++</span></li>
+                    <li><div class="bar" data-percentage="Familiar" style="height: 100px"></div><span>Javascript</span></li>
+                    <li><div class="bar" data-percentage="Familiar" style="height: 100px"></div><span>(React) Javascript</span></li>
+                    <li><div class="bar" data-percentage="Basic" style="height: 50px"></div><span>Java</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="read-more" class="read-more active">
+        <div class="read-more-heading">
+            <div class="read-more-title">Header</div>
+            <button class="read-more-exit">&times;</button>
+        </div>
+        <div class="read-more-description">Text</div>
+        <div class="read-more-visuals"><img src="" id="rmimage" class="rmimage"/></div>
+    </div>
+    <div class="overlay"></div>    
+
+
+    <div class="bottom-bar">
+        <div class="socials">
+            <button class="fas fa-home" onclick="location.href='https://www.github.com/brianv212'" id="icon"></button>
+            <button class="fab fa-github-square" onclick="location.href='https://www.github.com/brianv212'" id="icon"></button>
+            <button class="fab fa-linkedin" onclick="location.href='https://www.linkedin.com/in/brian-ventura-34a975197/'" id="icon"></button>
+        </div>
+        <div class="website">https://brianventura.glitch.me</div>
+    </div>
+    <!-- <button class="changeUrl">See our projects</button> -->
+    
+    <script src="./projects.js"></script>
+</body>
+
+</html>

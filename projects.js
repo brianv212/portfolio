@@ -2,11 +2,24 @@ var titles = [[
     "Algorithm Racing!",
     "eSports Tracker",
     "Questions From a Stranger",
-    "Covid-19 Simulator"
+    "Covid-19 Simulator",
+    "CS 178: Machine Learning and Data Mining",
+    "CS 171: Intro to Artificial Intelligence",
+    "CS 121: Information Retrieval",
+    "CS 132: Computer Networks",
+    "CS 163: Graph Algorithms",
+    "CS 122A: ntroduction to Data Management",
+    "Informatics 131: Human Computer Interaction",
+    "CS 117: Computer Vision"
 ],[
     "CS 178: Machine Learning and Data Mining",
     "CS 171: Intro to Artificial Intelligence",
-    "CS 121: Information Retrieval"
+    "CS 121: Information Retrieval",
+    "CS 132: Computer Networks",
+    "CS 163: Graph Algorithms",
+    "CS 122A: ntroduction to Data Management",
+    "Informatics 131: Human Computer Interaction",
+    "CS 117: Computer Vision"
 ]]
 
 var text = [[
@@ -34,8 +47,8 @@ var text = [[
     been using the language for some time now, I thought it'd be an even better idea to just create\
     something together. Right after my finals this Winter quarter, we saw and signed up for Hack PSU\
     Spring 2021, with the only goal of having a good time, creating something that could be an introduction\
-    for my friend."
-],[
+    for my friend.",
+
     "Probably one of the harder courses I've taken. Considering I've never never\
     really dealt with Machine Learning, there was definitely a lot to take in over the\
     Fall quarter (2020). Upon learning about many different ML techniques, the final\
@@ -70,6 +83,8 @@ var text = [[
     the end, I was able to create a mini search engine for UCI-related links."
 ]]
 
+// a href=\"https://github.com/brianv212/algorithm_racing\" target=\"_blank\">Github Repository</a>"
+
 var text_full = [[
     "</br></br>(<a onclick=\"redirect('https://www.youtube.com/watch?v=kPRA0W1kECg')\" class='link'>The YouTube video in question</a>) Volume warning!\
     </br></br>This was my first ever website created, and my first time ever using React. Looking back now, this definitely\
@@ -78,7 +93,7 @@ var text_full = [[
     </br></br>As for the toughest challenge here, it was understanding how to 'animate' the bars moving on the screen. After many days\
     later and many hours spent learning how to style it, how to use Javascript Promises and async, and how to properly implement those\
     ideas into the algorithms, I was able to create this neat little website.\
-    </br></br><a onclick=\"redirect('https://github.com/brianv212/algorithm_racing')\" class='link'>Github Repository</a>",
+    </br></br><a href=\"https://github.com/brianv212/algorithm_racing\" target=\"_blank\">Github Repository</a>",
 
     "</br></br>This was done in January after I had just found out about Rocket League.\
     I am by no means any good at the game, but as with any other game, it's always refreshing\
@@ -116,65 +131,86 @@ var text_full = [[
     </br><a onclick=\"redirect('https://devpost.com/software/sus-simulator')\" class='link'>Dev Post</a>"],
     []
 ]
-// https://kodykhuu.github.io/covid-sim/
-// "<a href='"+item.title+"'>Google</a>"
 
 var pictures = [["./pics/algracing1.png","./pics/algracing2.png","./pics/algracing3.png"],
                 ["./pics/esports1.png","./pics/esports2.png"],
                 ["./pics/qfas_1.png", "./pics/qfas_2.png", "./pics/qfas_3.png"],
-                ["./pics/covidsim1.png","./pics/covidsim2.png","./pics/covidsim3.png"]]
+                ["./pics/covidsim1.png","./pics/covidsim2.png","./pics/covidsim3.png"],
+                ["./pics/qfas_2.png"],
+                ["./pics/qfas_2.png"],
+                ["./pics/qfas_2.png"],
+                ["./pics/qfas_2.png"],
+                ["./pics/qfas_2.png"],
+                ["./pics/qfas_2.png"],
+                ["./pics/qfas_2.png"],
+                ["./pics/qfas_2.png"]]
 
-var picture_index = 0;
-var picture_cycle = 0;
+// var picture_index = 0;
+// var picture_cycle = 0;
 
 var topBar = document.querySelector(".pp-topbar");
 var currentProject = document.querySelector(".pp-display");
 var directory = document.querySelector(".pp-directory");
+var redirect = document.querySelector(".changeUrl");
 
-var readMore = document.querySelector("#read_more_button");
-var readMoreSection = document.querySelector(".read-more");
-var readMoreTitle = document.querySelector(".read-more-title")
-var readMoreExit = document.querySelector(".read-more-exit");
-var readMoreText = document.querySelector(".read-more-description");
-var readMoreVisuals = document.querySelector(".read-more-visuals");
-var readMoreOverlay = document.querySelector(".overlay");
+// var readMore = document.querySelector("#read_more_button");
+// var readMoreSection = document.querySelector(".read-more");
+// var readMoreTitle = document.querySelector(".read-more-title")
+// var readMoreExit = document.querySelector(".read-more-exit");
+// var readMoreText = document.querySelector(".read-more-description");
+// var readMoreVisuals = document.querySelector(".read-more-visuals");
+// var readMoreOverlay = document.querySelector(".overlay");
 
 var index_category = 0;
-var index_category_item = 0;
+// var index_category_item = 0;
 
 topBar.addEventListener("click", changeCategory, false);
 function changeCategory(e) {
     if (e.target !== e.currentTarget) {
-        directory.className += " close";
-        directory.className = "pp-directory";
-        var clicked = e.target.id;
-
+        // Remove all items from view
         while (directory.children.length !== 0) {
             directory.removeChild(directory.children[0]);
         }
-        console.log(directory.children)
-        if (clicked === "1"){
-            index_category = 0;
-        }
-        else if (clicked === "2"){
-            index_category = 1;
+
+        let item = 0;
+        for (let i = 0; i < Math.ceil(titles[index_category].length / 3); i++){
+            // Make a new row
+            // var new_row = document.createElement("DIV");
+            // new_row.className = "pp-display-row";
+
+            // for the next three items: add
+            var tracker = 2;
+            while (tracker !== -1){
+                console.log(tracker);
+                if (item >= titles[index_category].length) {
+                    break;
+                }
+                else {
+                    var node = document.createElement("DIV");
+                    node.className = "pp-display-picture";
+
+                    var pic = document.createElement("IMG");
+                    pic.className = "image";
+                    pic.id = item.toString();
+                    pic.src = pictures[item][0];
+        
+                    node.appendChild(pic);  
+                    directory.appendChild(node);
+                }
+                tracker -= 1;
+                item += 1;
+            }
         }
 
-        for (let i = 0; i < titles[index_category].length ; i++){
-            var node = document.createElement("DIV");
-            
-            node.id = i.toString();
-            node.className = "pp-item";
-            node.innerHTML = titles[index_category][i];
-
-            var separator = document.createElement("HR");
-            separator.id = "bar";
-
-            directory.appendChild(node);
-            directory.appendChild(separator);
-        }
         console.log(directory.children)
         directory.className += " show"
+
+        var clicked = 0;
+        currentProject.querySelector(".pp-display-title").innerHTML = titles[index_category][parseInt(clicked)];
+        currentProject.querySelector(".pp-display-description").innerHTML = text[index_category][parseInt(clicked)] + text_full[index_category][parseInt(clicked)];
+        // index_category_item = parseInt(clicked);
+
+        currentProject.className += " show"
     }
 }
 
@@ -183,53 +219,51 @@ function changeCategory(e) {
 directory.addEventListener("click", navigateProject, false)
 function navigateProject(e){
     if (e.target !== e.currentTarget) {
-        var clicked = e.target.id;
+        var clicked = e.target.id;  
+        console.log(clicked)
         currentProject.querySelector(".pp-display-title").innerHTML = titles[index_category][parseInt(clicked)];
-        currentProject.querySelector(".pp-display-description").innerHTML = text[index_category][parseInt(clicked)];
+        currentProject.querySelector(".pp-display-description").innerHTML = text[index_category][parseInt(clicked)] + text_full[index_category][parseInt(clicked)];
+        // index_category_item = parseInt(clicked);
 
-        index_category_item = parseInt(clicked);
-
-        var element = currentProject.querySelector(".pp-display-picture");
-        if (index_category == 0){
-            currentProject.querySelector("#read_more_button").className = "button_display";
-            element.querySelector("#image").className = "image";
-            element.querySelector("#image").src = pictures[clicked][0];
-        }
-        else {
-
-            currentProject.querySelector("#read_more_button").className = "button_empty";
-            element.querySelector("#image").className = "image_empty";
-        }
-
+        // var element = currentProject.querySelector(".pp-display-pictures");
+        // if (index_category == 0){
+        //     element.querySelector("#image").className = "image";
+        //     element.querySelector("#image").src = pictures[clicked][0];
+        // }
+        // else {
+        //     element.querySelector("#image").className = "image_empty";
+        // }
     }
 }
 
-readMore.addEventListener("click", openReadMore, false)
-function openReadMore(e){
-    readMoreTitle.innerHTML = titles[index_category][index_category_item];
+// readMore.addEventListener("click", openReadMore, false)
+// function openReadMore(e){
+//     readMoreTitle.innerHTML = titles[index_category][index_category_item];
 
-    readMoreText.innerHTML = text[index_category][index_category_item] + text_full[index_category][index_category_item];
+//     readMoreText.innerHTML = text[index_category][index_category_item] + text_full[index_category][index_category_item];
 
-    readMoreVisuals.querySelector("#rmimage").src = pictures[index_category_item][0]
-    readMoreSection.classList.add("read-more-active");
-    readMoreOverlay.classList.add("overlay-active");
-}
+//     readMoreVisuals.querySelector("#rmimage").src = pictures[index_category_item][0]
+//     readMoreSection.classList.add("read-more-active");
+//     readMoreOverlay.classList.add("overlay-active");
+// }
 
-readMoreExit.addEventListener("click", closeReadMore, false)
-function closeReadMore(e){
-    readMoreText.innerHTML = "";
-    readMoreSection.classList.remove("read-more-active");
-    readMoreOverlay.classList.remove("overlay-active");
-}
+// readMoreExit.addEventListener("click", closeReadMore, false)
+// function closeReadMore(e){
+//     readMoreText.innerHTML = "";
+//     readMoreSection.classList.remove("read-more-active");
+//     readMoreOverlay.classList.remove("overlay-active");
+// }
 
-readMoreVisuals.addEventListener("click", cycleImages, false)
-function cycleImages(e){
-    picture_cycle += 1;
-    if (picture_cycle == pictures[index_category_item].length){ picture_cycle = 0; }
-    readMoreVisuals.querySelector("#rmimage").src = pictures[index_category_item][picture_cycle];
-}
+// readMoreVisuals.addEventListener("click", cycleImages, false)
+// function cycleImages(e){
+//     picture_cycle += 1;
+//     if (picture_cycle == pictures[index_category_item].length){ picture_cycle = 0; }
+//     readMoreVisuals.querySelector("#rmimage").src = pictures[index_category_item][picture_cycle];
+// }
 
-function redirect(link){
-    var win = window.open(link, '_blank');
-    win.focus();
+redirect.addEventListener("click", changeUrl, false)
+function changeUrl(e){
+    console.log("Texting");
+    history.pushState({}, 'Title', '/Url/Test');
+    document.load('/url html');
 }
