@@ -39,14 +39,14 @@
 .introduction {
     display: flex;
     flex-direction: row;
-    height: 300px;
+    height: 200px;
     margin: auto;
     width: var(--width);
 }
 
 .introduction-pic-container {
     background-color: var(--bg);
-    width: 33%;
+    width: 20%;
     margin: 0rem 2rem 0rem 2rem;
     border-radius: 5%;
     transition: box-shadow var(--duration) var(--transition-style);
@@ -67,7 +67,7 @@
 
 .introduction-about {
     background-color: var(--bg);
-    width: 57%;
+    width: 70%;
     border-radius: 10px;
     margin: 0rem 2rem 0rem 0rem;
     transition: box-shadow var(--duration) var(--transition-style);;
