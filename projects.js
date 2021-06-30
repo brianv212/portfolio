@@ -1,14 +1,17 @@
+
+
+
 var titles = [[
-    "Algorithm Racing!",
-    "eSports Tracker",
-    "Questions From a Stranger",
-    "Covid-19 Simulator",
-    "CS 178: Machine Learning and Data Mining",
-    "CS 171: Intro to Artificial Intelligence",
-    "CS 121: Information Retrieval",
-    "CS 122A: Introduction to Data Management",
-    "Informatics 131: Human Computer Interaction",
-    "CS 117: Computer Vision"
+    "CS 121: Information Retrieval",                // 1
+    "Algorithm Racing!",                            // 2
+    "CS 178: Machine Learning and Data Mining",     // 3
+    "CS 171: Intro to Artificial Intelligence",     // 4
+    "eSports Tracker",                              // 5
+    "Questions From a Stranger",                    // 6
+    "Covid-19 Simulator",                           // 7
+    "CS 122A: Introduction to Data Management",     // 8
+    "Informatics 131: Human Computer Interaction",  // 9
+    "CS 117: Computer Vision"                       // 10
 ],[
     "CS 178: Machine Learning and Data Mining",
     "CS 171: Intro to Artificial Intelligence",
@@ -21,11 +24,29 @@ var titles = [[
 ]]
 
 var text = [[
+    "The Web contains so much that it'd make one wonder how they'd manage to store\
+    information on the websites. Better yet, it makes people wonder how it is that\
+    when we search for something, a certain selection of links are chosen in a certain\
+    order. My information retrieval course taught me the basics on web search engines and how\
+    they work - how they rank websites and how they go about retrieving that information. In\
+    the end, I was able to create a mini search engine for UCI-related links.",
+
     "The idea came to mind after a popular video on YouTube came around\
     where algorithms were visualized one by one, making funny sounds as they\
     were sorting. I thought it'd be a cooler idea to see two algorithms side\
     by side, racing each other to see which one finishes first. It tested my\
     knowledge on Big O time and other algorithm concepts.",
+
+    "Probably one of the harder courses I've taken. Considering I've never never\
+    really dealt with Machine Learning, there was definitely a lot to take in over the\
+    Fall quarter (2020). Upon learning about many different ML techniques, the final\
+    assignment for this class was to create a learner to compete in a Kaggle Competition.",
+
+    "It's always interesting seeing how bots would perform against an actual player\
+    in video games. How do people manage to get an AI to outperform humans? My intro\
+    to Artificial Intelligence class helped me understand the basics of MCTS and a/b\
+    pruning, which led to the creation of my own little AI that'd be able to go head to\
+    head with above average players.",
 
     "As an avid eSports watcher, I find it a bit hard trying to\
     switch between different sites to get information on the latest\
@@ -47,24 +68,6 @@ var text = [[
     Spring 2021, with the only goal of having a good time, creating something that could be an introduction\
     for my friend.",
 
-    "Probably one of the harder courses I've taken. Considering I've never never\
-    really dealt with Machine Learning, there was definitely a lot to take in over the\
-    Fall quarter (2020). Upon learning about many different ML techniques, the final\
-    assignment for this class was to create a learner to compete in a Kaggle Competition.",
-
-    "It's always interesting seeing how bots would perform against an actual player\
-    in video games. How do people manage to get an AI to outperform humans? My intro\
-    to Artificial Intelligence class helped me understand the basics of MCTS and a/b\
-    pruning, which led to the creation of my own little AI that'd be able to go head to\
-    head with above average players.",
-
-    "The Web contains so much that it'd make one wonder how they'd manage to store\
-    information on the websites. Better yet, it makes people wonder how it is that\
-    when we search for something, a certain selection of links are chosen in a certain\
-    order. My information retrieval course taught me the basics on web search engines and how\
-    they work - how they rank websites and how they go about retrieving that information. In\
-    the end, I was able to create a mini search engine for UCI-related links.",
-
     "There's a ton of information out there and it can get hard to manage once you start\
     getting more and more. This class introduced the basics of data management, having us\
     use a common program to guide along the way (MySQL).",
@@ -81,6 +84,11 @@ var text = [[
 ]]
 
 var text_full = [[
+    "</br></br> This class sparked an interest in front end work, as I exposed myself a bit to Flask.\
+    Unfortunately, I wasn't able to create an amazing website given my limited knowledge at the time, but\
+    it was with that issue that prompted me to learn other languages specific to web development.\
+    </br></br><p class=\"date\">June 2020</p>",
+
     "</br></br>(<a href=\"https://www.youtube.com/watch?v=kPRA0W1kECg\" target=\"_blank\">The video in question</a>) Volume warning!\
     </br></br>This was my first ever website created, and my first time ever using React. Looking back now, this definitely\
     could've been done in a much shorter period of time, but what mattered to me was that I took something out of\
@@ -89,7 +97,23 @@ var text_full = [[
     later and many hours spent learning how to style it, how to use Javascript Promises and async, and how to properly implement those\
     ideas into the algorithms, I was able to create this neat little website.\
     </br></br><a href=\"https://github.com/brianv212/algorithm_racing\" target=\"_blank\">Github Repository</a>\
-    </br><a href=\"https://brianv212.github.io/algorithm_racing/\" target=\"_blank\">Website</a>",
+    </br><a href=\"https://brianv212.github.io/algorithm_racing/\" target=\"_blank\">Website</a>\
+    </br></br><p class=\"date\">September 2020</p>",
+
+    "</br></br>For me personally, I'm interested in the idea of machine learning. It's definitely\
+    a wonder how one can make a machine learn to accurately predict outcomes based purely on\
+    past events, but delving deeper into the topic made me feel like this was a whole new\
+    realm of coding that would be quite difficult to wrap my head around.\
+    </br></br>Nonetheless, I did my fair share of learning and produced a learner that would predict\
+    close to 75% in this kaggle competition. Definitely not the best but a great feat for myself.\
+    </br></br><p class=\"date\">December 2020</p>",
+
+    "</br></br>The game in question was no other than checkers, and my partner and I had quite\
+    a big hurdle to jump over before having a competent AI. In our early stages of development,\
+    we hadn't quite grasped the idea of MCTS, so we would play against other AI's with no clear\
+    indication of a straight-thinking AI - randomly taking moves wasn't enough to clearly gauge\
+    a functioning AI.\
+    </br></br><p class=\"date\">December 2020</p>",
 
     "</br></br>This was done in January after I had just found out about Rocket League.\
     I am by no means any good at the game, but as with any other game, it's always refreshing\
@@ -101,7 +125,8 @@ var text_full = [[
     time and time again. This personal project really tested my\
     ability to use APIs and enhanced my ability to read and gather data. In the end, I created a simple\
     web application that gathers information on upcoming eSporting events, Rocket League included!\
-    </br></br><a href=\"https://github.com/brianv212/eSportsTracker\" target=\"_blank\">Github Repository</a>",
+    </br></br><a href=\"https://github.com/brianv212/eSportsTracker\" target=\"_blank\">Github Repository</a>\
+    </br></br><p class=\"date\">February 2021</p>",
 
     "</br></br>I've always wondered about this, and it wasn't until a friend came\
     up to me saying how she wanted to ask me something, but didn't really want me to\
@@ -113,7 +138,9 @@ var text_full = [[
     of Firebase, but with some determination it came by easily.\
     It's definitely not a perfect application, but given more time I would like to\
     add more features to it and make it a cleaner-looking application!\
-    </br></br><a href=\"https://github.com/brianv212/questions_from_a_stranger\" target=\"_blank\">Github Repository</a>",
+    </br></br><a href=\"https://github.com/brianv212/questions_from_a_stranger\" target=\"_blank\">Github Repository</a>\
+    </br></br><p class=\"date\">March 2021</p>",
+
     "</br></br>We weren't going for any of the prizes. We simply wanted to teach a good friend how to use the language.\
     It was also a plus being able to refine the skills I already have with this project. When thinking about ideas, we noticed\
     a particular category about spreading awareness about Covid-19 using any technology. We went with this idea because it was\
@@ -124,22 +151,8 @@ var text_full = [[
     </br></br>It was a very fun process and we all definitely enjoyed working on it. Check it out!\
     </br></br><a href=\"https://kodykhuu.github.io/covid-sim\" target=\"_blank\">Website</a>\
     </br><a href=\"https://github.com/brianv212/covid-sim-1\" target=\"_blank\">Github Repository</a>\
-    </br><a href=\"https://devpost.com/software/sus-simulator\" target=\"_blank\">DevPost</a>",
-
-    "</br></br>For me personally, I'm interested in the idea of machine learning. It's definitely\
-    a wonder how one can make a machine learn to accurately predict outcomes based purely on\
-    past events, but delving deeper into the topic made me feel like this was a whole new\
-    realm of coding that would be quite difficult to wrap my head around.\
-    </br></br>Nonetheless, I did my fair share of learning and produced a learner that would predict\
-    close to 75% in this kaggle competition. Definitely not the best but a great feat for myself.",
-
-    "</br></br>The game in question was no other than checkers, and my partner and I had quite\
-    a big hurdle to jump over before having a competent AI. In our early stages of development,\
-    we hadn't quite grasped the idea of MCTS, so we would play against other AI's with no clear\
-    indication of a straight-thinking AI - randomly taking moves wasn't enough to clearly gauge\
-    a functioning AI.",
-
-    "",
+    </br><a href=\"https://devpost.com/software/sus-simulator\" target=\"_blank\">DevPost</a>\
+    </br></br><p class=\"date\">March 2021</p>",
 
     "</br></br>Storing data is one thing, but making it efficient was another thing. The class\
     helped me utilize techniques that are common practice in data management. Starting with E-R\
@@ -149,73 +162,101 @@ var text_full = [[
     </br></br>It was definitely most interesting to me simply because I was curious as to how\
     sites would manage large databases and continue to add more and more information, all at little\
     to no cost of the runtime to gather it. This class was definitely eye-opening, and a class that\
-    would prepare me for future classes and jobs.",
+    would prepare me for future classes and jobs\
+    </br></br><p class=\"date\">June 2021</p>",
 
-    "</br></br>Placeholder",
+    "</br></br>Learning from the ground up, I picked up on all types of techniques that are used\
+    when designing and shipping an application. What kinds of requirements are needed in the application\
+    as well as what the user needs to see - as well as how easily some ideas can be seen - are just\
+    some of the few design ideas covered in the class. It's one of my personal favorites as it made me\
+    look deeper into my favorite applications and websites, coming to notice the design decisions that\
+    were covered in the class. Figuring out the meanings behind the way sites were made and learning\
+    about its effectiveness was pretty interesting to note as I dug deeper into the topics of the course.\
+    </br></br><p class=\"date\">June 2021</p>",
 
-    "</br></br>Placeholder"
+    "</br></br>The entire process required us to calculate intrinsic and extrinsic camera parameters,\
+    triangulating points, smoothing the mesh produced by Delaunay’s triangulation, and utilization of\
+    Meshlab for final touches on mesh alignment and poisson surface reconstruction. The topics were not that\
+    hard to understand, but it was the coding part that really took up my time when doing the project. Trying\
+    to translate a process into code will always prove difficult, but with proper planning and careful\
+    execution, I was able to apply all these topics, and eventually create a neat looking model of a\
+    nice mannequin.\
+    </br></br><p class=\"date\">June 2021</p>"
 ]
 ]
 
-var pictures = [["./pics/algracing1.png","./pics/algracing2.png","./pics/algracing3.png"],
+var pictures = [["./pics/information-retrieval.png"],
+                ["./pics/algracing1.png","./pics/algracing2.png","./pics/algracing3.png"],
+                ["./pics/machine-learning.jpg"],
+                ["./pics/ai.jpg"],
                 ["./pics/esports1.png","./pics/esports2.png"],
                 ["./pics/qfas_1.png", "./pics/qfas_2.png", "./pics/qfas_3.png"],
                 ["./pics/covidsim1.png","./pics/covidsim2.png","./pics/covidsim3.png"],
-                ["./pics/machine-learning.jpg"],
-                ["./pics/ai.jpg"],
-                ["./pics/information-retrieval.png"],
                 ["./pics/data-management.jpg"],
                 ["./pics/hci.jpg"],
                 ["./pics/computer-vision.jpg"]]
 
 var topBar = document.querySelector(".pp-topbar");
+
 var currentProject = document.querySelector(".pp-display");
 var directory = document.querySelector(".pp-directory");
-var redirect = document.querySelector(".changeUrl");
 
 var index_category = 0;
+
+var projects_present = 0;
 
 topBar.addEventListener("click", changeCategory, false);
 function changeCategory(e) {
     if (e.target !== e.currentTarget) {
-        // Remove all items from view
-        while (directory.children.length !== 0) {
-            directory.removeChild(directory.children[0]);
+
+
+        if (projects_present === 1){
+            projects_present = 0;
+            directory.className = "pp-directory";
+            currentProject.className = "pp-display";
+            // Remove all items from view
+            setTimeout(function() {
+                while (directory.children.length !== 0) {
+                    directory.removeChild(directory.children[0]);
+                }
+            }, 750);
         }
+        else {
+            projects_present = 1;
+            let item = 0;
+            for (let i = 0; i < Math.ceil(titles[index_category].length / 3); i++){
+                var tracker = 2;
+                while (tracker !== -1){
+                    console.log(tracker);
+                    if (item >= titles[index_category].length) {
+                        break;
+                    }
+                    else {
+                        var node = document.createElement("DIV");
+                        node.className = "pp-display-picture";
 
-        let item = 0;
-        for (let i = 0; i < Math.ceil(titles[index_category].length / 3); i++){
-            var tracker = 2;
-            while (tracker !== -1){
-                console.log(tracker);
-                if (item >= titles[index_category].length) {
-                    break;
+                        var pic = document.createElement("IMG");
+                        pic.className = "image";
+                        pic.id = item.toString();
+                        pic.src = pictures[item][0];
+            
+                        node.appendChild(pic);  
+                        directory.appendChild(node);
+                    }
+                    tracker -= 1;
+                    item += 1;
                 }
-                else {
-                    var node = document.createElement("DIV");
-                    node.className = "pp-display-picture";
-
-                    var pic = document.createElement("IMG");
-                    pic.className = "image";
-                    pic.id = item.toString();
-                    pic.src = pictures[item][0];
-        
-                    node.appendChild(pic);  
-                    directory.appendChild(node);
-                }
-                tracker -= 1;
-                item += 1;
             }
+
+            console.log(directory.children)
+            directory.className += " show"
+
+            var clicked = 0;
+            currentProject.querySelector(".pp-display-title").innerHTML = titles[index_category][parseInt(clicked)];
+            currentProject.querySelector(".pp-display-description").innerHTML = text[index_category][parseInt(clicked)] + text_full[index_category][parseInt(clicked)];
+
+            currentProject.className += " show"
         }
-
-        console.log(directory.children)
-        directory.className += " show"
-
-        var clicked = 0;
-        currentProject.querySelector(".pp-display-title").innerHTML = titles[index_category][parseInt(clicked)];
-        currentProject.querySelector(".pp-display-description").innerHTML = text[index_category][parseInt(clicked)] + text_full[index_category][parseInt(clicked)];
-
-        currentProject.className += " show"
     }
 }
 
@@ -264,10 +305,3 @@ function navigateProject(e){
 //     if (picture_cycle == pictures[index_category_item].length){ picture_cycle = 0; }
 //     readMoreVisuals.querySelector("#rmimage").src = pictures[index_category_item][picture_cycle];
 // }
-
-redirect.addEventListener("click", changeUrl, false)
-function changeUrl(e){
-    console.log("Texting");
-    history.pushState({}, 'Title', '/Url/Test');
-    document.load('/url html');
-}

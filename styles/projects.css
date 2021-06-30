@@ -17,10 +17,15 @@ a:hover {
 }
 
 .past-projects-inner {
-    margin: 0rem 2rem 2rem 2rem;
+    margin: 0rem 2rem 0rem 2rem;
     background-color: var(--bg);
     height: 90%;
     border-radius: 10px;
+    transition: box-shadow var(--duration) var(--transition-style);
+}
+
+.past-projects-inner:hover {
+    box-shadow: -10px -5px 5px var(--transition-color);
 }
 
 .pp-topbar {
